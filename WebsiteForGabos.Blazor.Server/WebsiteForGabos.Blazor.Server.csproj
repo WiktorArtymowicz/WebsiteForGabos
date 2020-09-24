@@ -16,6 +16,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
     <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="Model.xafml" />
   </ItemGroup>
