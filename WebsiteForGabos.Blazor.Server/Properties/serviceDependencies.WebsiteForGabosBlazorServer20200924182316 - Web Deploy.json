@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "signalr1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/WFG",
+      "type": "signalr.azure",
+      "connectionId": "Azure__SignalR__ConnectionString",
+      "secretStore": "AzureAppSettings"
+    },
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/mydatadase/databases/WebsiteForGabos.Blazor.Server_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionString",
+      "secretStore": "AzureAppSettings"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/mydatadase/databases/WebsiteForGabos.Blazor.Server_db",
+      "type": "mssql.azure",
+      "connectionId": "EasyTestConnectionString",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

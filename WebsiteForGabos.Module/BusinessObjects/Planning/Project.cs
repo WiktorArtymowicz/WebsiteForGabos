@@ -18,7 +18,6 @@ namespace WebsiteForGabos.Module.BusinessObjects.Planning
         {
 
         }
-
         public string Name { get => _name; set => SetPropertyValue(nameof(Name), ref _name, value); }
         public Person Manager { get => _manager; set => SetPropertyValue(nameof(Manager), ref _manager, value); }
         [Size(SizeAttribute.Unlimited)]
