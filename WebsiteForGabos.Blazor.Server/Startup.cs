@@ -16,8 +16,11 @@ using WebsiteForGabos.Blazor.Server.Services;
 
 namespace WebsiteForGabos.Blazor.Server {
     public class Startup {
-        public Startup(IConfiguration configuration) {
+        public Startup(IConfiguration configuration, IWebHostEnvironment env) {
             Configuration = configuration;
+            var dupa = env.ContentRootPath;
+            var contentRoot = configuration.GetValue<string>(WebHostDefaults.ContentRootKey);
+        
         }
 
         public IConfiguration Configuration { get; }
